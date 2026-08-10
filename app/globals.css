@@ -239,7 +239,16 @@ footer p { margin: 0 0 18px; font: 13px/1.5 var(--font-geist-mono), monospace; }
 .detail-project-body > h2 { max-width: 850px; margin: 0 0 34px; font-size: clamp(38px, 5.5vw, 78px); line-height: 1.04; letter-spacing: -.06em; font-weight: 520; word-break: keep-all; }
 .detail-overview { max-width: 780px; margin: 0 0 70px; font-size: clamp(18px, 2vw, 26px); line-height: 1.65; letter-spacing: -.025em; word-break: keep-all; }
 .detail-columns { display: grid; grid-template-columns: 1fr 1fr; column-gap: 50px; row-gap: 0; }
-.detail-columns h3 { margin: 0 0 18px; padding-top: 16px; border-top: 1px solid var(--ink); font: 14px/1.5 var(--font-geist-mono), monospace; letter-spacing: .06em; }
+.detail-columns h3 {
+  margin: 0 0 24px;
+  padding-top: 20px;
+  border-top: 2px solid var(--ink);
+  font-family: var(--font-geist-sans), "Apple SD Gothic Neo", sans-serif;
+  font-size: clamp(20px, 1.7vw, 24px);
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+}
 .detail-columns-mobile { display: none; }
 .detail-column-row { display: grid; grid-column: 1 / -1; grid-template-columns: 1fr 1fr; gap: 50px; }
 .detail-column-cell {
