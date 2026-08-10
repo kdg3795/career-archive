@@ -33,7 +33,7 @@ export default function Home() {
         <aside className="profile-contact" aria-label="연락처">
           <p>CONTACT</p>
           <dl>
-            <div><dt>Tel</dt><dd>010-****-3362</dd></div>
+            <div><dt>Tel</dt><dd><a href="tel:01077953362">010-7795-3362</a></dd></div>
             <div><dt>Mail</dt><dd><a href="mailto:kdg3795@naver.com">kdg3795@naver.com</a></dd></div>
           </dl>
           <a className="profile-contact-cta" href="mailto:kdg3795@naver.com">이메일 보내기 <span aria-hidden="true">↗</span></a>
