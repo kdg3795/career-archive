@@ -75,7 +75,7 @@ export default function ResumePage() {
     <main className="resume-page">
       <header className="detail-header">
         <a href="/">KIM DONGGYU</a>
-        <nav aria-label="이력서 메뉴"><a href="#experience">경력</a><a href="#cover-letter">자기소개서</a><a href="/career">경력기술서</a></nav>
+        <nav aria-label="이력서 메뉴"><a className="nav-active" href="#experience" aria-current="location">경력</a><a href="#cover-letter">자기소개서</a><a href="/career">경력기술서</a></nav>
         <span>RESUME</span>
       </header>
 

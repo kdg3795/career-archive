@@ -123,7 +123,7 @@ export default function CareerPage() {
         <a href="/" aria-label="메인 페이지로 이동">WEB DEVELOPER</a>
         <nav aria-label="경력기술서 메뉴">
           <a href="/">경력</a>
-          <a href="#projects">프로젝트</a>
+          <a className="nav-active" href="#projects" aria-current="location">프로젝트</a>
         </nav>
         <span>CAREER DESCRIPTION</span>
       </header>
