@@ -148,7 +148,17 @@ export default function CareerPage() {
             <div className="detail-project-body">
               <h2>{project.title}</h2>
               <p className="detail-overview">{project.overview}</p>
-              <div className="detail-columns">
+              <div className="detail-columns detail-columns-desktop">
+                <h3>담당 업무</h3>
+                <h3>주요 업무 및 성과</h3>
+                {Array.from({ length: Math.max(project.responsibilities.length, project.outcomes.length) }, (_, rowIndex) => (
+                  <div className="detail-column-row" key={rowIndex}>
+                    <div className="detail-column-cell">{project.responsibilities[rowIndex] && <span>{project.responsibilities[rowIndex]}</span>}</div>
+                    <div className="detail-column-cell">{project.outcomes[rowIndex] && <span>{project.outcomes[rowIndex]}</span>}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="detail-columns detail-columns-mobile">
                 <section>
                   <h3>담당 업무</h3>
                   <ul>{project.responsibilities.map((item) => <li key={item}>{item}</li>)}</ul>
