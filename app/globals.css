@@ -342,9 +342,9 @@ footer p { margin: 0 0 18px; font: 13px/1.5 var(--font-geist-mono), monospace; }
 .cover-intro h2 { grid-column: 2; margin: 28px 0 0; font: 650 clamp(54px, 8vw, 112px)/1 var(--font-geist-sans); letter-spacing: -.06em; }
 .cover-items { margin-left: min(19vw, 280px); }
 .cover-items article { display: grid; grid-template-columns: minmax(240px, .7fr) 1.3fr; gap: 6vw; padding: 58px 0 76px; border-top: 1px solid rgba(244,244,244,.24); }
-.cover-heading > span, .cover-heading > p { font: 14px/1.5 var(--font-geist-mono), monospace; }
-.cover-heading > span { color: rgba(244,244,244,.4); }
-.cover-heading > p { margin: 12px 0 34px; color: rgba(244,244,244,.62); }
+.cover-heading > span, .cover-heading > p { font-family: var(--font-geist-sans), sans-serif; line-height: 1.5; }
+.cover-heading > span { color: rgba(244,244,244,.58); font-size: 16px; font-weight: 600; }
+.cover-heading > p { margin: 12px 0 32px; color: rgba(244,244,244,.78); font-size: 18px; font-weight: 600; }
 .cover-heading h3 { margin: 0; font-size: clamp(25px, 3vw, 42px); line-height: 1.3; letter-spacing: -.04em; font-weight: 650; word-break: keep-all; }
 .cover-body p { max-width: 760px; margin: 0 0 24px; color: rgba(244,244,244,.82); font-size: 17px; line-height: 1.85; word-break: keep-all; }
 .cover-emphasis { color: var(--paper); font-weight: 700; box-shadow: inset 0 -1px 0 rgba(244,244,244,.75); }
