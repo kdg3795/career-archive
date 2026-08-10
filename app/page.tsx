@@ -30,11 +30,15 @@ export default function Home() {
           <span>PROFILE · 2026</span>
         </div>
 
-        <dl className="profile-contact">
-          <div><dt>Tel</dt><dd>010-****-3362</dd></div>
-          <div><dt>Mail</dt><dd><a href="mailto:kdg3795@naver.com">kdg3795@naver.com</a></dd></div>
-          <div><dt>GitHub</dt><dd><a href="https://github.com/kdg3795" target="_blank" rel="noreferrer">github.com/kdg3795 ↗</a></dd></div>
-        </dl>
+        <aside className="profile-contact" aria-label="연락처">
+          <p>CONTACT</p>
+          <dl>
+            <div><dt>Tel</dt><dd>010-****-3362</dd></div>
+            <div><dt>Mail</dt><dd><a href="mailto:kdg3795@naver.com">kdg3795@naver.com</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/kdg3795" target="_blank" rel="noreferrer">github.com/kdg3795 ↗</a></dd></div>
+          </dl>
+          <a className="profile-contact-cta" href="mailto:kdg3795@naver.com">이메일 보내기 <span aria-hidden="true">↗</span></a>
+        </aside>
       </section>
 
       <section className="profile-links" aria-label="문서 바로가기">

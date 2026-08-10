@@ -274,10 +274,17 @@ footer p { margin: 0 0 18px; font: 13px/1.5 var(--font-geist-mono), monospace; }
 .profile-photo-frame { justify-self: center; width: min(100%, 360px); }
 .profile-photo-frame img { display: block; width: 100%; height: min(52svh, 500px); object-fit: cover; object-position: center 30%; filter: grayscale(1); border: 1px solid var(--line); }
 .profile-photo-frame span { display: block; padding-top: 10px; color: var(--muted); font: 13px/1.4 var(--font-geist-mono), monospace; letter-spacing: .06em; }
-.profile-contact { align-self: end; margin: 0 0 12px; }
-.profile-contact > div { display: grid; grid-template-columns: 50px 1fr; padding: 14px 0; border-top: 1px solid var(--line); }
-.profile-contact dt { color: var(--muted); font: 14px/1.4 var(--font-geist-mono), monospace; text-transform: uppercase; }
-.profile-contact dd { margin: 0; font-size: 15px; }
+.profile-contact { align-self: end; margin: 0 0 12px; padding: 24px; background: var(--ink); color: var(--paper); }
+.profile-contact > p { margin: 0 0 22px; color: rgba(244,244,244,.62); font: 14px/1.4 var(--font-geist-mono), monospace; letter-spacing: .1em; }
+.profile-contact dl { margin: 0; }
+.profile-contact dl > div { display: grid; grid-template-columns: 64px 1fr; padding: 16px 0; border-top: 1px solid rgba(244,244,244,.24); }
+.profile-contact dt { color: rgba(244,244,244,.62); font: 14px/1.4 var(--font-geist-mono), monospace; text-transform: uppercase; }
+.profile-contact dd { margin: 0; font-size: 16px; }
+.profile-contact dd a { border-bottom: 1px solid rgba(244,244,244,.45); padding-bottom: 3px; transition: border-color .2s ease; }
+.profile-contact dd a:hover { border-color: var(--paper); }
+.profile-contact-cta { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding: 17px 0 2px; border-top: 1px solid var(--paper); font-size: 18px; font-weight: 600; }
+.profile-contact-cta span { transition: transform .2s ease; }
+.profile-contact-cta:hover span { transform: translate(3px, -3px); }
 .profile-links { display: grid; grid-template-columns: 1fr 1fr; }
 .profile-links a { display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 18px; min-height: 112px; padding: 0 3.2vw; border-right: 1px solid var(--line); transition: background .2s ease, color .2s ease; }
 .profile-links a:hover { background: var(--ink); color: var(--paper); }
