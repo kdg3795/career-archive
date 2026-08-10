@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Career Profile — Resume & Experience",
-  description: "자기소개와 경력의 흐름을 담은 커리어 프로필입니다.",
+  title: "Kim DongGyu — Back-end Developer",
+  description: "Java와 Spring 기반 교육 플랫폼 개발자 Kim DongGyu의 커리어 아카이브입니다.",
   icons: { icon: "/favicon.svg" },
 };
 
