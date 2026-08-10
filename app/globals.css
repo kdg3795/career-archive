@@ -340,6 +340,7 @@ footer p { margin: 0 0 18px; font: 13px/1.5 var(--font-geist-mono), monospace; }
 .cover-heading > p { margin: 12px 0 34px; color: rgba(244,244,244,.62); }
 .cover-heading h3 { margin: 0; font-size: clamp(25px, 3vw, 42px); line-height: 1.3; letter-spacing: -.04em; font-weight: 650; word-break: keep-all; }
 .cover-body p { max-width: 760px; margin: 0 0 24px; color: rgba(244,244,244,.82); font-size: 17px; line-height: 1.85; word-break: keep-all; }
+.cover-emphasis { color: var(--paper); font-weight: 700; box-shadow: inset 0 -1px 0 rgba(244,244,244,.75); }
 
 @media (min-width: 761px) and (max-width: 1100px) {
   .profile-stage { grid-template-columns: 1fr minmax(280px, 360px); gap: 44px; }

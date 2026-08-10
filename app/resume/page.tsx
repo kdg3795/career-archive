@@ -38,12 +38,13 @@ const coverLetters = [
     label: "성격 및 강점",
     title: "소통을 통해 함께 해결책을 만들어가는 개발자",
     paragraphs: [
-      "저의 가장 큰 강점은 사람들과 자연스럽게 어울리고 적극적으로 소통하는 능력입니다. 먼저 다가가 대화를 시작하는 편이며, 새로운 환경에서도 구성원들과 빠르게 관계를 형성합니다.",
+      "저의 가장 큰 강점은 사람들과 자연스럽게 어울리고 적극적으로 소통하는 능력입니다.",
+      "먼저 다가가 대화를 시작하는 편이며, 새로운 환경에서도 구성원들과 빠르게 관계를 형성합니다.",
       "하나의 기능을 개발하기 위해 기획자, 퍼블리셔, 개발자, 인프라 담당자와 의견을 주고받는 것은 물론이고, 외부 시스템 연계 과정에서는 타 업체 개발 담당자와 협의하기도 했습니다.",
       "요구사항이 명확하지 않거나 기존 시스템과 충돌할 때 혼자 판단하기보다 빠르게 대응하기 위해 관련 담당자와 내용을 확인하고 가능한 방법을 함께 논의합니다. 수정된 요구사항을 다시 정리해 공유하고, 기술적으로 어려운 부분이 생길 경우 단순히 불가능하다고 말하기보다 적용 가능한 대안을 제시합니다.",
       "장애가 발생했을 때도 책임 소재를 구분하기보다 문제에 빠르게 대응하는 것을 가장 우선시합니다. 로그와 데이터를 확인하고 정확한 프로세스 내용을 공유하면서 관련 담당자와 함께 원인을 좁혀 문제를 해결합니다.",
       "밝고 친화적인 성격을 바탕으로 편하게 의견을 나눌 수 있는 분위기를 만들며, 업무에서는 일정과 책임을 중요하게 생각하고 맡은 일을 끝까지 마무리합니다.",
-      "앞으로도 기술 전문성을 높이는 데 최선을 다하며, 동료들과 적극적으로 소통해 기술과 사람을 연결하는 ‘테크니컬 커넥터’가 되어 팀이 더 좋은 결과를 만들 수 있도록 기여하겠습니다.",
+      <>앞으로도 기술 전문성을 높이는 데 최선을 다하며, 동료들과 적극적으로 소통해 기술과 사람을 연결하는 <strong className="cover-emphasis">협업의 연결고리</strong>가 되어 팀이 더 좋은 결과를 만들 수 있도록 기여하겠습니다.</>,
     ],
   },
   {
@@ -97,7 +98,7 @@ export default function ResumePage() {
 
       <section className="cover-letter" id="cover-letter">
         <div className="cover-intro"><span>03</span><p>SELF INTRODUCTION</p><h2>자기소개서</h2></div>
-        <div className="cover-items">{coverLetters.map((item, index) => <article key={item.label}><div className="cover-heading"><span>{String(index + 1).padStart(2, "0")}</span><p>{item.label}</p><h3>{item.title}</h3></div><div className="cover-body">{item.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></article>)}</div>
+        <div className="cover-items">{coverLetters.map((item, index) => <article key={item.label}><div className="cover-heading"><span>{String(index + 1).padStart(2, "0")}</span><p>{item.label}</p><h3>{item.title}</h3></div><div className="cover-body">{item.paragraphs.map((paragraph, paragraphIndex) => <p key={`${item.label}-${paragraphIndex}`}>{paragraph}</p>)}</div></article>)}</div>
       </section>
 
       <footer className="detail-footer"><a href="/">← 프로필로 돌아가기</a><a href="/career">경력기술서 보기 →</a></footer>
