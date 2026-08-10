@@ -99,8 +99,8 @@ export default function Home() {
           {profile.name}
         </a>
         <nav aria-label="주요 메뉴">
-          <a href="#career">경력기술서</a>
-          <a href="#projects">프로젝트</a>
+          <a href="#career">경력</a>
+          <a href="/career">경력기술서</a>
           <a href="#certifications">자격증</a>
         </nav>
         <span className="contact-link">CAREER PROFILE</span>
@@ -118,7 +118,7 @@ export default function Home() {
         </h1>
         <div className="hero-footer reveal reveal-three">
           <p>{profile.role}</p>
-          <a href="#career" aria-label="경력기술서로 이동">
+          <a href="#career" aria-label="경력으로 이동">
             SCROLL TO READ <span aria-hidden="true">↓</span>
           </a>
         </div>
@@ -133,8 +133,8 @@ export default function Home() {
           <span>EXPERIENCE</span>
         </div>
         <div className="section-content">
-          <p className="eyebrow">WHAT I HAVE BUILT</p>
-          <h2 id="career-title">경력기술서</h2>
+          <p className="eyebrow">WORK EXPERIENCE</p>
+          <h2 id="career-title">경력</h2>
           <div className="timeline">
             {profile.experiences.map((experience, index) => (
               <article className="experience" key={`${experience.company}-${experience.period}`}>
@@ -155,46 +155,15 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="projects section-shell" id="projects" aria-labelledby="projects-title">
-        <div className="section-index">
-          <span>02</span>
-          <span>PROJECTS</span>
-        </div>
-        <div className="section-content">
-          <p className="eyebrow">SELECTED WORK</p>
-          <h2 id="projects-title">주요 프로젝트</h2>
-          <div className="project-list">
-            {profile.projects.map((project, index) => (
-              <article className="project" key={project.title}>
-                <div className="project-meta">
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <span>{project.type}</span>
-                  <span>{project.period}</span>
-                </div>
-                <h3>{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <ul className="project-highlights">
-                  {project.highlights.map((highlight) => (
-                    <li key={highlight}>{highlight}</li>
-                  ))}
-                </ul>
-                <ul className="stack-list" aria-label={`${project.title} 기술 스택`}>
-                  {project.stack.map((technology) => (
-                    <li key={technology}>{technology}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
+          <a className="career-detail-link" href="/career">
+            프로젝트별 경력기술서 보기 <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
       <section className="certifications section-shell" id="certifications" aria-labelledby="certifications-title">
         <div className="section-index">
-          <span>03</span>
+          <span>02</span>
           <span>LICENSES</span>
         </div>
         <div className="section-content">
