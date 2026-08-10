@@ -18,6 +18,7 @@ const projects = [
       "사용자 화면과 관리자 화면 간 데이터 연동",
       "공통 기능의 재사용성을 고려한 화면 및 서버 구조 설계",
       "운영 요구사항에 따른 기존 기능 수정 및 오류 대응",
+      "Jenkins 기반 빌드·배포 수행과 Grafana 운영 모니터링",
     ],
     outcomes: [
       "관리자가 배너와 팝업의 게시 기간 및 노출 여부를 직접 관리할 수 있도록 구현했습니다.",
@@ -30,8 +31,10 @@ const projects = [
       "Spring Security의 JWT 인증 필터에서 토큰 유효성을 검증하고 인증 정보를 SecurityContext에 연결해 사용자·관리자 요청의 접근 범위를 구분했습니다.",
       "배너·팝업은 노출 여부뿐 아니라 게시 시작일과 종료일을 함께 판단하도록 조회 조건을 구성해 운영자가 별도 배포 없이 노출 기간을 제어할 수 있게 했습니다.",
       "개인정보처리방침은 현재 게시본과 이전 이력을 분리해 관리하여 정책 변경 내역을 추적할 수 있도록 설계했습니다.",
+      "구축된 Jenkins CI/CD 환경에서 빌드·배포 작업을 수행하고 배포 결과와 오류 로그를 확인했습니다.",
+      "Grafana 모니터링 대시보드를 활용해 애플리케이션 상태와 운영 지표를 확인하고, 이상 징후와 서버 로그를 함께 비교하며 장애 원인을 분석했습니다.",
     ],
-    stack: ["Java", "Spring Boot", "eGovFrame", "Spring Security", "JWT", "Spring MVC", "Thymeleaf", "MyBatis", "MariaDB", "Git"],
+    stack: ["Java", "Spring Boot", "eGovFrame", "Spring Security", "JWT", "Spring MVC", "Thymeleaf", "MyBatis", "MariaDB", "Jenkins", "Grafana", "Git"],
   },
   {
     category: "실무 프로젝트",
