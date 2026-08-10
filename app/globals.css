@@ -199,11 +199,11 @@ footer p { margin: 0 0 18px; font: 13px/1.5 var(--font-geist-mono), monospace; }
   letter-spacing: .08em;
 }
 .detail-header > a { font-weight: 700; }
-.detail-header nav { display: flex; gap: 30px; }
+.detail-header nav { display: flex; gap: 0; }
 .detail-header > span { justify-self: end; color: var(--muted); }
 .detail-header a { transition: opacity .2s ease; }
 .detail-header a:hover { opacity: .5; }
-.detail-header nav a { position: relative; padding: 29px 2px 27px; }
+.detail-header nav a { position: relative; padding: 29px 50px; }
 .detail-header nav a.nav-active {
   font-weight: 700;
 }
